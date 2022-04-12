@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Player API</title>
+    <link rel="stylesheet" href="c/main.css">
+    <script src="j/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="11" r="3"></circle>
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+            </svg> Most Beautiful Places to Visit in Yellowstone National Park</h1>
+    </header>
+    <section>
+        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div class="video">
+            <div id="player"></div>
+
+            <!-- 1. controls -->
+            <div id="controls" class="controls">
+                <form id="video_form">
+                    <fieldset>
+                        <input type="button" onclick="playVideo()" value="Play" />
+                        <input type="button" onclick="pauseVideo()" value="Pause" />
+                        <input type="button" onclick="playRate()" value="fast forward" />
+                        <input type="button" onclick="slow_motion()" value="slo mo" />
+                        <input type="button" onclick="normal()" value="normal" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- information -->
+        <article id="info">
+            <div id="head" class="location"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="11" r="3"></circle>
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                </svg>
+                <p id="location"></p>
+            </div>
+        </article>
+    </section>
+    <div id="resumeVideo" class="popup">
+        <p>Do you want to resume video?</p>
+        <button class="resum_button">Ok</button>
+    </div>
+</body>
+
+</html>

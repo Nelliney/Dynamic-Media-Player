@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    background-size: contain;
+    background-image: url("../i/1.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: #0B0301;
+    color: #DFD5C5;
+}
+
+header h1 {
+    padding: 3% 0% 3% 0%;
+    text-align: center;
+    margin: 0%;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 2%;
+}
+
+#player {
+    width: 400px;
+    width: 80%;
+    margin: 10% 10% 0% 10%;
+}
+
+.controls {
+    background-color: black;
+    border: none;
+    margin-top: 0%;
+    width: 80%;
+    margin: 0% 10% 10% 10%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+fieldset input {
+    width: 15%;
+    background-color: #494F4D;
+}
+
+/* popup*/
+
+.popup {
+    border-radius: 1%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgba(225, 225, 225, 0.7);
+    width: 240px;
+    color: black;
+    margin-bottom: 4%;
+}
+
+.show_popup {
+    opacity: 100;
+}
+
+.popup p {
+    text-align: center;
+    padding: 4% 4% 0% 4%;
+}
+
+.popup button {
+    align-self: center;
+    border-radius: 50px;
+    background-color: #494F4D;
+    border: none;
+    color: #F2E7D3;
+    padding: 15px 35px;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-bottom: 14%;
+}
+
+/* information header*/
+
+.location {
+    background-color: #0B0301;
+    color: #DFD5C5;
+    opacity: 0%;
+}
+
+.location p {
+    margin: 0%;
+    padding: 0% 0% 2% 0%;
+}
+
+.location svg {
+    margin-top: 1%;
+}
+
+.show {
+    opacity: 100;
+}
+
+/* information */
+
+#info {
+    position: relative;
+}
+
+.myframe {
+    margin: 0% 10% 10% 10%;
+    background-size: contain;
+    height: 250.59px;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.myframe1 {
+    background-image: url("../i/2.jpg");
+}
+
+.myframe2 {
+    background-image: url("../i/3.jpg");
+}
+
+.myframe3 {
+    background-image: url("../i/4.jpg");
+}
+
+.myframe4 {
+    background-image: url("../i/5.jpg");
+}
+
+.myframe5 {
+    background-image: url("../i/6.jpg");
+}
+
+.myframe6 {
+    background-image: url("../i/7.jpg");
+}
+
+.myframe7 {
+    background-image: url("../i/8.jpg");
+}
+
+.hide {
+    opacity: 0%;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        margin: 2% 5% 2% 5%;
+        display: flex;
+        justify-items: center;
+    }
+
+    #player {
+        width: 640px;
+        margin: 0%;
+    }
+
+    .controls {
+        background-color: black;
+        border: none;
+        width: 640px;
+        margin: 0%;
+    }
+
+    .myframe {
+        margin: 0%;
+        background-size: cover;
+        height: 426.59px;
+    }
+
+    .location {
+        width: 640px;
+    }
+
+}
